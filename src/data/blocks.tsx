@@ -340,6 +340,11 @@ export const blocks: ReactElement[] = [
                     id="scrubble-ladder-dist"
                     varName="ladderDistance"
                     {...numberPropsFromDefinition(getVariableInfo("ladderDistance"))}
+                defaultValue={5}
+                min={1}
+                max={10}
+                step={0.5}
+                color="#3b82f6"
                 />{" "}
                 meters from the wall, and the ladder reaches{" "}
                 <InlineScrubbleNumber
