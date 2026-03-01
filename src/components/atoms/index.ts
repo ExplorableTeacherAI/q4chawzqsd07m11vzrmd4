@@ -179,3 +179,7 @@ export type { ImageDisplayProps, ImageFit } from "./visual/ImageDisplay";
 // Visual — Video Display
 export { VideoDisplay } from "./visual/VideoDisplay";
 export type { VideoDisplayProps, VideoFit } from "./visual/VideoDisplay";
+
+// Visual — Right Triangle Diagram (Pythagorean Theorem)
+export { RightTriangleDiagram } from "./visual/RightTriangleDiagram";
+export type { RightTriangleDiagramProps } from "./visual/RightTriangleDiagram";

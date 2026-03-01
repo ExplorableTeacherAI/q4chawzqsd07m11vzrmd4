@@ -78,83 +78,99 @@ export interface VariableDefinition {
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
     // ========================================
-    // ADD YOUR VARIABLES HERE
+    // PYTHAGOREAN THEOREM LESSON VARIABLES
     // ========================================
 
-    // Uncomment and modify these examples for your lesson:
-
-    /*
     // ─────────────────────────────────────────
-    // NUMBER - Use with sliders
+    // Triangle side lengths for interactive diagrams
     // ─────────────────────────────────────────
-    myValue: {
-        defaultValue: 5,
+    legA: {
+        defaultValue: 3,
         type: 'number',
-        label: 'My Value',
-        description: 'A number that controls something',
-        unit: 'm',           // optional unit display
+        label: 'Side a',
+        description: 'Length of the first leg (horizontal)',
+        min: 1,
+        max: 12,
+        step: 1,
+        color: '#3b82f6', // Blue
+    },
+
+    legB: {
+        defaultValue: 4,
+        type: 'number',
+        label: 'Side b',
+        description: 'Length of the second leg (vertical)',
+        min: 1,
+        max: 12,
+        step: 1,
+        color: '#14b8a6', // Teal
+    },
+
+    // For the visual proof section
+    proofStep: {
+        defaultValue: 0,
+        type: 'number',
+        label: 'Proof Step',
+        description: 'Current step in the visual proof',
         min: 0,
+        max: 3,
+        step: 1,
+    },
+
+    // Linked highlight for triangle parts
+    trianglePart: {
+        defaultValue: '',
+        type: 'linkedHighlight',
+        label: 'Active Triangle Part',
+        description: 'Which part of the triangle is highlighted',
+        color: '#f97316',
+    },
+
+    // Practice question answers
+    practiceAnswer1: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Practice Answer 1',
+        description: 'Student answer for finding the hypotenuse',
+        placeholder: '?',
+        correctAnswer: '5',
+        color: '#8b5cf6',
+    },
+
+    practiceAnswer2: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Practice Answer 2',
+        description: 'Student answer for finding a missing leg',
+        placeholder: '?',
+        correctAnswer: '8',
+        color: '#8b5cf6',
+    },
+
+    // Real-world application
+    ladderHeight: {
+        defaultValue: 4,
+        type: 'number',
+        label: 'Wall Height',
+        description: 'Height the ladder reaches on the wall',
+        min: 1,
         max: 10,
         step: 0.5,
+        unit: 'm',
+        color: '#14b8a6',
     },
 
-    // ─────────────────────────────────────────
-    // TEXT - Free text input
-    // ─────────────────────────────────────────
-    lessonTitle: {
-        defaultValue: 'My Lesson',
-        type: 'text',
-        label: 'Lesson Title',
-        description: 'The title of your lesson',
-        placeholder: 'Enter a title...',
+    ladderDistance: {
+        defaultValue: 3,
+        type: 'number',
+        label: 'Distance from Wall',
+        description: 'How far the ladder base is from the wall',
+        min: 1,
+        max: 10,
+        step: 0.5,
+        unit: 'm',
+        color: '#3b82f6',
     },
-
-    // ─────────────────────────────────────────
-    // SELECT - Dropdown with options
-    // ─────────────────────────────────────────
-    difficulty: {
-        defaultValue: 'medium',
-        type: 'select',
-        label: 'Difficulty',
-        description: 'The difficulty level of the lesson',
-        options: ['easy', 'medium', 'hard', 'expert'],
-    },
-
-    // ─────────────────────────────────────────
-    // BOOLEAN - Toggle switch
-    // ─────────────────────────────────────────
-    showHints: {
-        defaultValue: true,
-        type: 'boolean',
-        label: 'Show Hints',
-        description: 'Toggle to show or hide hints',
-    },
-
-    // ─────────────────────────────────────────
-    // ARRAY - List of numbers
-    // ─────────────────────────────────────────
-    dataPoints: {
-        defaultValue: [1, 4, 9, 16, 25],
-        type: 'array',
-        label: 'Data Points',
-        description: 'Y-values for plotting a graph',
-    },
-
-    // ─────────────────────────────────────────
-    // OBJECT - Complex structured data
-    // ─────────────────────────────────────────
-    graphSettings: {
-        defaultValue: { 
-            xMin: -10, 
-            xMax: 10, 
-            showGrid: true 
-        },
-        type: 'object',
-        label: 'Graph Settings',
-        description: 'Configuration for the graph display',
-        schema: '{ xMin: number, xMax: number, showGrid: boolean }',
-    },
-    */
 };
 
 /**

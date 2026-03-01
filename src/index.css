@@ -53,42 +53,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light mode colors */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light mode colors - Educational Math Theme */
+    --background: 220 20% 98%;
+    --foreground: 220 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 30% 15%;
 
-    --primary: 189 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Warm orange for energy and engagement */
+    --primary: 25 95% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
+    /* Secondary: Calm blue for trust and clarity */
+    --secondary: 220 70% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
+    /* Accent: Teal for mathematical elements */
+    --accent: 170 70% 40%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 189 100% 50%;
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 25 95% 55%;
 
     --radius: 0.75rem;
 
+    /* Math-specific color tokens */
+    --leg-a: 220 70% 50%;
+    --leg-b: 170 70% 40%;
+    --hypotenuse: 25 95% 55%;
+    --formula: 280 60% 55%;
+
     /* Custom tokens for light mode */
-    --glass-bg: 0 0% 100% / 0.8;
-    --gradient-primary: linear-gradient(135deg, hsl(189 100% 50%), hsl(270 60% 60%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%));
-    --shadow-glow: 0 0 30px hsl(189 100% 50% / 0.2);
+    --glass-bg: 0 0% 100% / 0.85;
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 55%), hsl(35 95% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 98%), hsl(220 15% 94%));
+    --shadow-glow: 0 0 30px hsl(25 95% 55% / 0.2);
+    --shadow-elegant: 0 10px 40px -10px hsl(220 30% 15% / 0.1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
